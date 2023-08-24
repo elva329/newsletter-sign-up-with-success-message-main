@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <script src="script.js" defer></script>
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="hidden" id="hidden">
+        <img src="/assets/images/icon-list.svg" class="success" />
+        <div class="title">Thanks for <br />Subscribing!</div>
+        <p class="confirm">
+          A confirmation email has been sent to
+          <span class="email-address">ash@loremcompany.com</span>. Please open
+          it and click the button inside to confirm the subscription.
+        </p>
+        <button class="dismiss">Dismiss message</button>
+      </div>
+      <section class="left" id="left">
+        <h1 class="title">Stay updated!</h1>
+        <span class="desc"
+          >Join 60,000+ product managers receving monthly updates on:</span
+        >
+        <ul class="features">
+          <li>
+            <img src="/assets/images/icon-list.svg" class="icon-list" />Product
+            discovery and building what matters
+          </li>
+          <li>
+            <img
+              src="/assets/images/icon-list.svg"
+              class="icon-list"
+            />Measuring to ensure updates are a success
+          </li>
+          <li>
+            <img src="/assets/images/icon-list.svg" class="icon-list" />Add much
+            more!
+          </li>
+        </ul>
+        <div class="email">
+          <span class="email-title">Email address</span>
+          <span class="error" id="error"></span>
+        </div>
+        <input
+          type="email"
+          placeholder="email@company.com"
+          class="email-input"
+          id="email-input"
+          required
+        />
+        <button class="subscribe" onclick="subscribe()" id="subscribe">
+          Subscribe to monthly newsletter
+        </button>
+      </section>
+      <section class="right" id="right"></section>
+    </div>
+  </body>
+</html>
